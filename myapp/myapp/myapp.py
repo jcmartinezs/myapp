@@ -61,3 +61,6 @@ def contact():
             return redirect(url_for('contact'))
     elif request.method == 'GET':
         return render_template('contact.html', form=form)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
